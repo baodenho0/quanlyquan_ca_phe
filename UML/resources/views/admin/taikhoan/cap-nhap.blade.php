@@ -49,7 +49,7 @@
                             <form action="{{ asset('admin/cap-nhat/thong-tin') }}" method="post">
                                 @csrf()
                                 <label>Thông tin nhân viên</label>
-                                <input disabled="" value="{{$taikhoan->nhanvien->chucvu}}" required type="text"  class="form-control" placeholder="Họ tên..."   />
+                                <input disabled="" value="{{$taikhoan->nhanvien->chucvu ?? ''}}" required type="text"  class="form-control" placeholder="Họ tên..."   />
                                 <br>
                                 <input value="{{$taikhoan->nhanvien->ten}}" required type="text" name="ten" class="form-control" placeholder="Họ tên..."   />
                                 <br>
